@@ -5,11 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SOLAR</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-	<link rel="stylesheet" href="css/jquery.fancybox.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/vendors.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -38,8 +35,8 @@
 						<a href="#" class="nav__link">Portfolio</a> 
 						<a href="#" class="nav__link">Review</a> 
 						<a href="#" class="nav__link">Contact</a>
-                        <a href="#" class="nav__menu">Menu</a>
 						<a href="#contact-us-modal" rel="modal:open" class="button header__button">Contact us</a>
+                        <!-- <a href="#" class="nav__menu">Menu</a> -->
 					</nav>
 				</div>
 			</header>
@@ -158,13 +155,13 @@
 			<h2 class="title title--regular">Our Project</h2>
 		</div>
 		<div class="gallery clearfix">
-			<a data-fancybox="gallery" href="img/gallery/man_1.jpg" class="col-fourth gallery__bg-image" style="background-image: url('img/gallery/man_1.jpg');">
+			<a data-fancybox="gallery" href="img/gallery/man_1.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/man_1.jpg');">
 			</a>
-			<a data-fancybox="gallery" href="img/gallery/roof_1.jpg" class="col-fourth gallery__bg-image" style="background-image: url('img/gallery/roof_1.jpg');">
+			<a data-fancybox="gallery" href="img/gallery/roof_1.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/roof_1.jpg');">
 			</a>
-			<a data-fancybox="gallery" href="img/gallery/man_2.jpg" class="col-fourth gallery__bg-image" style="background-image: url('img/gallery/man_2.jpg');">
+			<a data-fancybox="gallery" href="img/gallery/man_2.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/man_2.jpg');">
 			</a>
-			<a data-fancybox="gallery" href="img/gallery/roof_2.jpg" class="col-fourth gallery__bg-image" style="background-image: url('img/gallery/roof_2.jpg');">
+			<a data-fancybox="gallery" href="img/gallery/roof_2.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/roof_2.jpg');">
 			</a>
 		</div>
 		<button class="button button--centered">Load More</button>
@@ -278,7 +275,6 @@
 
 	<div class="section">
 		<div class="container">
-			<!-- поработать над именованием классов -->
 			<div class="contact-us">
 				<h2 class="title contact-us__title">Contact us</h2>
 				<div class="row">
@@ -314,7 +310,7 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="row">
+			<div class="row city-info--regular-s">
 				<div class="col-half">
 					<div class="city-info city-info--regular-right">
 						<div class="city-info__title">Solar</div>
@@ -328,7 +324,7 @@
 				</div>
 				<div class="col-half">
 					<div class="row">
-						<div class="col-half">
+						<div class="col-half col-s-half">
 							<div class="city-info city-info--regular-left">
 								<div class="city-info__title">New York</div>
 								<div class="city-info__lines">
@@ -343,7 +339,7 @@
 							</div>
 						</div>
 					
-						<div class="col-half ">
+						<div class="col-half col-s-half">
 							<div class="city-info city-info--regular-left">
 								<div class="city-info__title">London</div>
 								<div class="city-info__lines">
@@ -363,64 +359,10 @@
 		</div>
 	</footer>
 
-	
-	<script src="js/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
-	<script src="js/slick.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-		
-		    $('.review-carousel')
-				.on('init', function(){
-					$(this).show();
-				})
-		    .slick({
-		      arrows: false,
-		      asNavFor: '.person-carousel',
-		      swipe: false
-		    });
+	<script src="js/vendors.min.js"></script>
+	<script src="js/main.js"></script>
 
-		    $('.person-carousel')
-				.on('init', function(){
-					$(this).show();
-				})
-		    .slick({
-		      slidesToShow: 5,
-		      slidesToScroll: 1,
-		      asNavFor: '.review-carousel',
-		      // dots: true,
-		      arrows: true,
-		      centerMode: true,
-		      focusOnSelect: true,
-	      	});
-		});
-
-		$('[data-fancybox="gallery"]').fancybox({
-			// Options will go here
-		});
-	</script>
-
-    <script type="text/javascript">
-        $(function() {
-            var pull 		= $('.nav__menu');
-            menu 		= $('.nav__link');
-            menuHeight	= menu.height();
-
-            $(pull).on('click', function(e) {
-                e.preventDefault();
-                menu.slideToggle();
-            });
-
-            $(window).resize(function(){
-                var w = $(window).width();
-                if(w > 320 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>

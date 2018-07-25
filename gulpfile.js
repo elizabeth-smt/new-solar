@@ -31,7 +31,7 @@ gulp.task('watch', ['browser-sync'], function() {
 });
 
 gulp.task('sass', function() {
-	return gulp.src('app/sass/**/*.scss')
+	return gulp.src('app/sass/**/*.+(scss|sass)')
 	.pipe(sass())
 	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
 	.pipe(gulp.dest('app/css'))

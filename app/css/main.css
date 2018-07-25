@@ -372,21 +372,24 @@ svg {
 @media screen and (max-width: 576px) {
   .contact-us-row {
     padding: 0; }
-  .nav__link {
-    display: none;
-    height: auto; }
-  .nav__menu {
-    display: block;
-    width: 100%;
-    position: relative;
-    color: white;
-    text-decoration: none; }
-  .nav__menu:after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute; } }
+  /*.nav__link {
+		display: none;
+		height: auto;
+	}
+	.nav__menu {
+		display: block;
+        width: 100%;  
+        position: relative;
+        color: white;
+        text-decoration: none;
+	}
+	.nav__menu:after {  
+        content:""; 
+        width: 30px;  
+        height: 30px;  
+        display: inline-block;  
+        position: absolute;
+	}*/ }
 
 @media screen and (max-width: 767px) {
   .col-half {

@@ -1,0 +1,36 @@
+
+
+
+.button {
+	background-color: #22b977;
+	border:0;
+	height: 46px;
+	text-align: center;
+	width: 200px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+
+	&:active {
+		background-color: #04a35d;
+	}
+
+	&:hover {
+		background-color: #07b569;
+	}
+
+	&--centered {
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+
+	&--modal {
+		margin-top: 20px;
+	}
+}
+
+.about-us__button {
+	padding: 37px 0 0;
+}

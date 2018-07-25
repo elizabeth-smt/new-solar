@@ -1,0 +1,36 @@
+.city-info {
+
+	&__title {
+	font-size: 18px;
+	}
+
+	&__lines {
+		margin-top: 20px;
+		@media (min-width: 768px) {
+			margin-top: 40px;
+		}
+	}
+
+	&__line{
+		font-size: 14px;
+	}
+
+	&__line--gray {
+		color: gray;
+	}
+
+	&--regular-right {
+
+		@media (min-width: 768px) {
+			padding-right: 115px;
+		}
+	}
+}
+
+.city-row {
+
+	@media (min-width: 768px) {
+		padding-right: 45px;
+	}
+}
+

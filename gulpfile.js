@@ -25,12 +25,7 @@ gulp.task('browser-sync', function() {
 	});
 });
 
-gulp.task('watch', ['browser-sync'], function() {
-	gulp.watch('app/scss/*.scss', ['sass']);
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/css/**/*.css', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
-});
+
 
 gulp.task('sass', function() {
 	return gulp.src('app/scss/main.scss')
@@ -101,6 +96,13 @@ gulp.task('img', function() {
 	})))
 	.pipe(gulp.dest('dist/img'));
 })
+
+gulp.task('watch', ['browser-sync', 'sass'], function() {
+	gulp.watch('app/scss/*.scss', ['sass']);
+	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/css/**/*.css', browserSync.reload);
+	gulp.watch('app/js/**/*.js', browserSync.reload);
+});
 
 gulp.task('build', ['clean', 'sass'], function() {
 	var buildCss = gulp.src([

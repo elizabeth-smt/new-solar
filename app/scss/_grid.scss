@@ -1,0 +1,53 @@
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+
+	@include clearfix;
+}
+
+.figures-row {
+	margin: 0 -15px;
+
+	&__item {
+		float: left;
+		width: 33.3333%;
+		padding: 0 15px 85px;
+	}
+}
+
+.section__col {
+	float: left;
+	width: 50%;
+}
+
+[class*="col-"] {
+	float:left;
+	width: 100%;
+}
+
+.col-half {
+
+	@media (min-width: 768px) {
+		width: 50%;
+	}
+}
+
+.col-third {
+
+	@media (min-width: 768px) {
+		width: 33.3333%;
+	}
+}
+
+.col-fourth {
+	
+	@media (min-width: 768px) {
+		width: 25%;
+	}
+}

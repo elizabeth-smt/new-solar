@@ -1,0 +1,37 @@
+.person-carousel {
+	width: 400px;
+	margin: auto;
+
+	&__item {
+		width: 45px !important;
+		height: 45px;
+		margin: 20px 0;
+		border-radius: 50%;
+		background-position: center;
+		background-size: cover;
+		transition: .3s;
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		width: 20px;
+		height: 20px;
+		transform: translateY(-50%);
+		background-color: transparent;
+		font-size: 0;
+		border: 0;
+		background-position: center;
+		background-size: contain;
+	}
+
+	.slick-prev {
+		left: -40px;
+		background-image: url('../img/icons/back.png');
+	}
+
+	.slick-next {
+		right: -40px;
+		background-image: url('../img/icons/next.png');
+	}
+}

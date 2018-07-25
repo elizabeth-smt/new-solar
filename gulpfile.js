@@ -8,7 +8,9 @@ var gulp = require('gulp'),
 	del = require('del'),
 	imagemin = require('gulp-imagemin'),
 	cache = require('gulp-cache'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	svgmin = require('gulp-svgmin'),
+	svgstore = require('gulp-svgstore');
 
 gulp.task('default', ['watch']);
 
@@ -24,16 +26,16 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-	gulp.watch('app/sass/*.scss', ['sass']);
+	gulp.watch('app/scss/*.scss', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/css/**/*.css', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-	return gulp.src('app/sass/**/*.scss')
+	return gulp.src('app/scss/main.scss')
 	.pipe(sass())
-	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+	.pipe(autoprefixer(['last 10 versions', 'ie 9'], {cascade: true}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
 });
@@ -63,6 +65,23 @@ gulp.task('css-vendors', ['sass'], function() {
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('app/css'));
 })
+
+// SVG min.
+gulp.task('svgmin', function () {
+    return gulp.src('app/img/svg/**/*')
+        .pipe(svgmin())
+        .pipe(gulp.dest('app/img/svg'));
+});
+
+// SVG sprite
+gulp.task('svgstore', function () {
+    return gulp
+        .src('app/img/svg/sprite/*.svg')
+        .pipe(svgmin())
+        .pipe(svgstore())
+        .pipe(rename({basename: 'sprite'}))
+        .pipe(gulp.dest('app/img'));
+});
 
 gulp.task('clean', function() {
 	return del.sync('dist');

@@ -35,7 +35,7 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	line-height: 30px;
+	line-height: 30px; // зачем выставлять такой line-height?
 }
 
 .clearfix:before,
@@ -45,10 +45,6 @@ body {
 }
 .clearfix:after {
    clear: both;
-}
-
-.clearfix {
-	*zoom: 1;
 }
 
 .container {
@@ -401,7 +397,7 @@ h6 {
 }
 
 svg {
-	fill: #530086;
+	fill: #530086; // цвет заливки будет задан всем svg - это плохо ((
 }
 
 [class*="col-"] {
@@ -475,7 +471,7 @@ svg {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.col-half {
 		width: 100%;
 	}
@@ -497,17 +493,6 @@ svg {
 	}
 }
 
-@media screen and (max-width: 992px) {
-	.city-info--regular-right {
-		padding-right: 15px;
-	}
-}
-
-@media screen and (max-width: 1200px) {
-	
-}
-
-
 @media (min-width: 768px) {
 	.col-half {
 		width: 50%;
@@ -523,5 +508,11 @@ svg {
 
 	.city-info--regular-left {
 		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.city-info--regular-right {
+		padding-right: 15px;
 	}
 }

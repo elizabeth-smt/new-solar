@@ -1,0 +1,142 @@
+.section-header {
+	min-height: 100vh;
+	margin: 0 0 60px;
+	background-image: linear-gradient(to right,#22b977,#015183), url(../img/background/solar-panels.jpg);
+	background-blend-mode: multiply; 
+	background-size: cover;
+	padding: 40px 0 0;
+
+	&__title {
+		color: white;
+		font-weight: normal;
+		font-size: 54px;
+		text-align: center;
+		padding: 25vh 0;
+		max-width: 910px;
+    	margin: auto;
+	}
+}
+
+.header {
+	position: relative;
+	margin-bottom: 40px;
+
+	&__logo {
+	 	float: left;
+	 	width: 200px;
+	 	margin-left: 15px;
+
+		img {
+			max-width: 100%;
+			height: 46px;
+		}
+	 }
+
+	&__button {
+		width: 140px;
+		text-decoration: none;
+		line-height: 46px;
+		display: inline-block;
+	}
+}
+
+.menu-btn {
+	position: relative;
+	float: right;
+	width: 42px;
+	height: 32px;
+	margin-right: 15px;
+	cursor: pointer;
+
+	span {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background-color: #fff;
+		transition: .3s;
+
+		&:first-child {
+			top: 0;
+		}
+
+		&:nth-child(2) {
+			top: 14px;
+		}
+
+		&:last-child {
+			bottom: 0;
+		}
+	}
+
+	&.is-open {
+		span {
+			&:first-child {
+				transform: rotate(-45deg) translateY(20px);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&:last-child {
+				transform: rotate(45deg) translateY(-20px);
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.nav {
+	display: none;
+	position: absolute;
+	left: -15px;
+	top: 100%;
+	width: calc(100% + 30px);
+	padding: 5px 15px;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+
+	& > a {
+		display: block;
+	}
+
+	@media (min-width: 768px) {
+		display: block !important;
+		position: static;
+		float: right;
+		height: 46px;
+		width: auto;
+		max-width: calc(100% - 200px);
+		background-color: transparent;
+
+		& > a {
+			display: inline-block;
+		}
+	}
+
+	&__link {
+		text-decoration:none;
+		color: white;
+		padding-right: 27px;
+	}
+
+	&__link:hover {
+		color: #b7c8cb;
+	}
+
+	&__link:active {
+		color: #005083;
+	}
+
+	&__menu {
+		display: none;
+	}
+}
+
+
+

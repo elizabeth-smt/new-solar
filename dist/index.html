@@ -1,15 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/libs.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SOLAR</title>
+	<link rel="stylesheet" href="css/vendors.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolorum officiis commodi provident neque cupiditate, voluptate nam iste incidunt, placeat error, nobis eveniet, libero nihil sit veritatis maiores recusandae? Ipsa.</h1>
 
-	<script src="js/libs.min.js"></script>
-	<script src="js/command.js"></script>
+<body>
+	<div id="contact-us-modal" class="modal">
+		<h2 class="title">Contact Us</h2>
+		<form class="contact__form">
+		  	<div class="form-group"><input type="text" placeholder="Name" class="contact-form__field"></div>
+		  	<div class="form-group"><input type="text" placeholder="Email" class="contact-form__field"></div>
+		  	<div class="form-group"><input type="text" placeholder="Telephone" class="contact-form__field"></div>
+		  	<button type="submit" class="button button--centered button--modal">Send</button>
+		</form>
+	</div>
+
+
+	<div class="section-header">
+		<div class="container">
+			<header class="header">
+				<div class="row">
+					<a href="" class="header__logo">
+						<img src="img/logo.png">
+					</a>
+					<nav class="nav">
+						<a href="#" class="nav__link">Home</a> 
+						<a href="#" class="nav__link">About us</a> 
+						<a href="#" class="nav__link">Services</a> 
+						<a href="#" class="nav__link">Portfolio</a> 
+						<a href="#" class="nav__link">Review</a> 
+						<a href="#" class="nav__link">Contact</a>
+						<a href="#contact-us-modal" rel="modal:open" class="button header__button">Contact us</a>
+                        <!-- <a href="#" class="nav__menu">Menu</a> -->
+					</nav>
+				</div>
+			</header>
+			<h1 class="section-header__title">Make the <b>best decision</b> for your roof and home</h1>
+		</div>
+	</div>
+
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-half">
+					<img src="img/solar.jpg" class="block-image">
+				</div>
+				<div class="col-half">
+					<div class="about-us">
+						<h2 class="title title--regular">About Us</h2>
+						<div class="about-us__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						</div>
+						<div class="about-us__button"><button class="button">Download Broshure</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section-advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-third">
+					<div class="figure">
+						<div class="figure__image">
+							<img src="img/icons/1-1.svg">
+						</div>
+						<div class="figure__title">
+							New Roof
+						</div>
+						<div class="figure__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-third">
+					<div class="figure">
+						<div class="figure__image">
+							<img src="img/icons/2-2.gif">
+						</div>
+						<div class="figure__title">
+							Roof Replacement
+						</div>
+						<div class="figure__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-third">
+					<div class="figure">
+						<div class="figure__image">
+							<img src="img/icons/3-3.gif">
+						</div>
+						<div class="figure__title">Roof Repair
+						</div>
+						<div class="figure__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-third">
+					<div class="figure">
+						<div class="figure__image">
+							<img src="img/icons/4-4.gif">
+						</div>
+						<div class="figure__title">
+							Gutter Service
+						</div>
+						<div class="figure__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-third">
+					<div class="figure">
+						<div class="figure__image">
+							<img src="img/icons/5-5.gif">
+						</div>
+						<div class="figure__title">
+							Siding
+						</div>
+						<div class="figure__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-third">
+					<div class="figure">
+						<div class="figure__image">
+							<img src="img/icons/6-6.gif">
+						</div>
+						<div class="figure__title">
+						Waterproofing
+						</div>
+						<div class="figure__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="section">
+		<div class="container">
+			<h2 class="title title--regular">Our Project</h2>
+		</div>
+		<div class="gallery clearfix">
+			<a data-fancybox="gallery" href="img/gallery/man_1.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/man_1.jpg');">
+			</a>
+			<a data-fancybox="gallery" href="img/gallery/roof_1.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/roof_1.jpg');">
+			</a>
+			<a data-fancybox="gallery" href="img/gallery/man_2.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/man_2.jpg');">
+			</a>
+			<a data-fancybox="gallery" href="img/gallery/roof_2.jpg" class="col-fourth col-s-half gallery__bg-image" style="background-image: url('img/gallery/roof_2.jpg');">
+			</a>
+		</div>
+		<button class="button button--centered">Load More</button>
+	</div>
+
+
+	<div class="section">
+		<div class="review-section">
+			<div class="container">
+				<div class="quote__icon">
+					<img src="img/icons/quote.gif">
+				</div>
+				<div class="review-carousel" style="display: none;">
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+					<div class="review">
+						<div class="review__text">
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+						</div>
+						<div class="review__person">
+							<div class="review__name">Jane Galadriel</div>
+							<div class="review__post">Ceo Tengkurep</div>
+						</div>
+					</div>
+				</div>
+				<div class="person-carousel" style="display: none;">
+					<div class="person-carousel__item" style="background-image: url(img/photo/first.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/second.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/third.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/fourth.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/fifth.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/sixth.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/seventh.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/eighth.jpg);"></div>
+					<div class="person-carousel__item" style="background-image: url(img/photo/ninth.jpg);"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="section">
+		<div class="container">
+			<div class="contact-us">
+				<h2 class="title contact-us__title">Contact us</h2>
+				<div class="row">
+					<div class="col-half">
+						<div class="city-row">
+							<div class="city-info">
+								<div class="city-info__title">New York</div>
+								<div class="city-info__lines">
+									<div class="city-info__line city-info__line--gray">709 Honey Creek Dr.</div>
+									<div class="city-info__line city-info__line--gray">New York</div>
+									<div class="city-info__line city-info__line--gray">NY 10028</div>
+								</div>
+							</div>
+							<div class="map-container">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.3387250696715!2d-73.95439884919053!3d40.77656687922347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bbc0000001%3A0x5f56f6af6743df68!2sBitFlex!5e0!3m2!1sru!2sua!4v1530821403291" class="map"></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="col-half">
+						<form class="contact-form">
+							<div class="form-group"><input type="text" name="Name" class="contact-form__field" placeholder="Name"></div>
+							<div class="form-group"><input type="text" name="Email" class="contact-form__field" placeholder="Email"></div>
+							<div class="form-group"><input type="text" name="Subject" class="contact-form__field" placeholder="Subject"></div>
+							<div class="form-group"><textarea name="Massage" class="contact-form__field textteria" rows="9" placeholder="Your Massage"></textarea></div>
+							<button type="submit" class="button button--centered">Send Form</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row city-info--regular-s">
+				<div class="col-half">
+					<div class="city-info city-info--regular-right">
+						<div class="city-info__title">Solar</div>
+						<div class="city-info__lines">
+							<div class="city-info__line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+						</div>
+						<div class="city-info__lines">
+							<div class="city-info__line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-half">
+					<div class="row">
+						<div class="col-half col-s-half">
+							<div class="city-info city-info--regular-left">
+								<div class="city-info__title">New York</div>
+								<div class="city-info__lines">
+									<div class="city-info__line">709 Honey Creek Dr.</div>
+									<div class="city-info__line">New York</div>
+									<div class="city-info__line">NY 10028</div>
+								</div>
+								<div class="city-info__lines">
+									<div class="city-info__line">1-888-299-2000</div>
+									<div class="city-info__line">yourmail@company.com</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-half col-s-half">
+							<div class="city-info city-info--regular-left">
+								<div class="city-info__title">London</div>
+								<div class="city-info__lines">
+									<div class="city-info__line">4851 Willow Greene Drive</div>
+									<div class="city-info__line">Montgomery</div>
+									<div class="city-info__line">AL 36109</div>
+								</div>
+								<div class="city-info__lines">
+									<div class="city-info__line">1-888-299-2000</div>
+									<div class="city-info__line">yourmail@company.com</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/vendors.min.js"></script>
+	<script src="js/main.js"></script>
+
+
 </body>
 </html>

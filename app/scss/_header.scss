@@ -9,11 +9,15 @@
 	&__title {
 		color: white;
 		font-weight: normal;
-		font-size: 54px;
 		text-align: center;
-		padding: 25vh 0;
 		max-width: 910px;
     	margin: auto;
+    	font-size: 45px;
+		padding: 10vh 0;
+		@media (min-width: 768px) {
+			font-size: 54px;
+			padding: 25vh 0;
+		}
 	}
 }
 

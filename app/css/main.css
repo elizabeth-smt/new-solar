@@ -192,11 +192,15 @@ body {
   .section-header__title {
     color: white;
     font-weight: normal;
-    font-size: 54px;
     text-align: center;
-    padding: 25vh 0;
     max-width: 910px;
-    margin: auto; }
+    margin: auto;
+    font-size: 45px;
+    padding: 10vh 0; }
+    @media (min-width: 768px) {
+      .section-header__title {
+        font-size: 54px;
+        padding: 25vh 0; } }
 
 .header {
   position: relative;
@@ -294,6 +298,11 @@ body {
   @media (min-width: 768px) {
     .city-info__lines {
       margin-top: 40px; } }
+  .city-info__lines--s-air {
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .city-info__lines--s-air {
+        margin-bottom: 0; } }
 
 .city-info__line {
   font-size: 14px; }
@@ -389,15 +398,17 @@ body {
 .form-group {
   margin-bottom: 20px; }
 
-@media (min-width: 768px) {
-  .contact-form {
-    padding-left: 20px; } }
-
-.contact-form__field {
-  padding: 0 25px;
-  font-weight: lighter;
-  width: 100%;
-  height: 45px; }
+.contact-form {
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .contact-form {
+      padding-left: 20px;
+      margin-top: 0; } }
+  .contact-form__field {
+    padding: 0 25px;
+    font-weight: lighter;
+    width: 100%;
+    height: 45px; }
 
 .map-container {
   margin-top: 20px; }
